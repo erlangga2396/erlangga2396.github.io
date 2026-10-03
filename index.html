@@ -2,125 +2,216 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Profil Erlangga</title>
 
     <style>
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background: #f1f5f9;
-            color: #1e293b;
+            color: #334155;
+            line-height: 1.7;
         }
 
         header {
-            background: #2563eb;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 70px 20px;
         }
 
         header h1 {
-            font-size: 40px;
+            font-size: 42px;
             margin-bottom: 10px;
         }
 
-        container {
-            max-width: 850px;
-            margin: 30px auto;
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
             padding: 0 20px;
         }
 
-        card {
+        /* CARD */
+        .card {
             background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
         }
 
         .card h2 {
             color: #2563eb;
-            margin-top: 0;
+            font-size: 24px;
+            margin-bottom: 18px;
+            border-left: 5px solid #2563eb;
+            padding-left: 12px;
         }
 
+        .card p {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+ 
         .data {
-            line-height: 1.8;
+            display: grid;
+            gap: 10px;
         }
 
+        .data p {
+            background: #f8fafc;
+            padding: 12px 15px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .data b {
+            color: #1e40af;
+        }
+
+        /* FOOTER */
         footer {
             background: #1e293b;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+            padding: 25px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+ 
+        @media (max-width: 600px) {
+            header {
+                padding: 50px 20px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            .card {
+                padding: 22px;
+            }
+
+            .card h2 {
+                font-size: 21px;
+            }
+
+            .card p {
+                font-size: 15px;
+                text-align: left;
+            }
         }
     </style>
 </head>
 
 <body>
 
+
     <header>
         <h1>Profil Erlangga</h1>
-        <p>Personal Profile Erlangga</p>
+        <p>Personal Profile Website</p>
     </header>
+
+
 
     <div class="container">
 
+  
         <div class="card">
             <h2>Data Diri</h2>
 
             <div class="data">
                 <p><b>Nama:</b> Erlangga</p>
+
                 <p><b>NIM:</b> 2505090063</p>
+
                 <p><b>Program Studi:</b> Pendidikan Teknik Informatika dan Komputer</p>
+
                 <p><b>Tahun Angkatan:</b> 2025</p>
             </div>
         </div>
 
+
+        <!-- KESIBUKAN -->
         <div class="card">
             <h2>Kesibukan Selain Kuliah</h2>
 
             <p>
-                Selain menjalani kegiatan perkuliahan,saya juga sering membantu kedua orang tua di rumah.
-                Salah satunya dengan membantu ayah berjualan makanan,mulai dari menyiapkan makanan hingga membantu melayani pembeli.
-                Di waktu luang,saya juga mengisi kegiatan dengan belajar dan mengembangkan kemampuan di bidang teknologi informasi.
-                Saya tertarik mencoba berbagai hal baru yang berkaitan dengan komputer,pemrograman,dan pembuatan website.Selain itu,
-                saya terkadang mengikuti kegiatan di bidang seni,khususnya menjadi MC Jawa (pranatacara) dalam berbagai acara.
-                Dari kegiatan tersebut,saya bisa belajar berkomunikasi,berbicara di depan banyak orang,meningkatkan rasa percaya diri,
-                serta menambah pengalaman di luar bidang perkuliahan.
+                Selain menjalani kegiatan perkuliahan, saya juga sering
+                membantu kedua orang tua di rumah. Salah satunya dengan
+                membantu ayah berjualan makanan, mulai dari menyiapkan
+                makanan hingga membantu melayani pembeli. Di waktu luang,
+                saya juga mengisi kegiatan dengan belajar dan mengembangkan
+                kemampuan di bidang teknologi informasi. Saya tertarik
+                mencoba berbagai hal baru yang berkaitan dengan komputer,
+                pemrograman, dan pembuatan website. Selain itu, saya
+                terkadang mengikuti kegiatan di bidang seni, khususnya
+                menjadi MC Jawa atau pranatacara dalam berbagai acara.
+                Dari kegiatan tersebut, saya belajar berkomunikasi,
+                berbicara di depan banyak orang, meningkatkan rasa percaya
+                diri, serta menambah pengalaman di luar bidang perkuliahan.
             </p>
         </div>
+
+
 
         <div class="card">
             <h2>Cita-Cita</h2>
 
             <p>
                 Saya bercita-cita menjadi seorang yang ahli di bidang
-                teknologi informasi dan dapat menciptakan teknologi
-                yang bermanfaat bagi orang lain.
+                teknologi informasi dan dapat menciptakan teknologi yang
+                bermanfaat bagi orang lain. Saya ingin terus belajar,
+                mengembangkan kemampuan, dan mendapatkan pengalaman melalui
+                berbagai proyek agar dapat mencapai cita-cita tersebut.
             </p>
         </div>
 
+
+        <!-- BIDANG IT -->
         <div class="card">
             <h2>Bidang IT yang Ingin Didalami</h2>
 
             <p>
                 Bidang IT yang ingin saya dalami adalah pemrograman,
-                pengembangan website,dan jaringan komputer.Saya ingin
-                terus belajar dan mengembangkan kemampuan tersebut
-                hingga dapat menjadi seorang expert di bidang IT.
+                pengembangan website, dan jaringan komputer. Saya ingin
+                mempelajari bidang tersebut secara bertahap, mulai dari
+                dasar hingga tingkat yang lebih lanjut. Dengan terus belajar
+                dan berlatih melalui berbagai proyek, saya berharap dapat
+                meningkatkan kemampuan hingga menjadi seorang expert di
+                bidang IT.
             </p>
         </div>
 
     </div>
 
+
+
     <footer>
-        <p>© 2026 Erlangga | Personal Profil Erlangga</p>
+        <p>© 2026 Erlangga | Personal Profile</p>
     </footer>
 
 </body>
